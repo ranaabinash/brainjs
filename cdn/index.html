@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//unpkg.com/brain.js" defer></script>
+    <script src="./index.js" defer></script>
+    <title>Brain JS</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+      .output {
+        margin: 10px;
+        background-color: white;
+        width: 400px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Brain.JS</h1>
+    <div class="container">
+      <div>
+        <label for="color">Pick a color</label>
+        <input type="color" name="color" id="color" style="margin-left: 5px" />
+      </div>
+      <div>
+        <div class="output" id="output">
+          <h1 id="text">The choice of color is ____</h1>
+        </div>
+        <div class="result">
+          <h2 id="dark" class="text">Dark:</h2>
+          <h2 id="white" class="text">White:</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
